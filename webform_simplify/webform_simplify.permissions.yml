@@ -1,0 +1,37 @@
+configure webform simplify:
+  title: 'Configure the Webform Simplify module'
+
+edit any webform settings:
+  title: 'Edit any webform settings'
+  description: 'Allows users to edit any webform''s settings.'
+  restrict access: true
+  warning: 'Warning: Give to trusted roles only; this permission has security implications. Note: A webform''s configuration includes all settings and handlers which can contain sensitive information.'
+
+edit any webform form settings:
+  title: 'Edit any webform form settings'
+  description: 'Allows users to edit any webform''s form settings.'
+
+edit any webform submission settings:
+  title: 'Edit any webform submission settings'
+  description: 'Allows users to edit any webform''s submission settings.'
+
+edit any webform confirmation settings:
+  title: 'Edit any webform confirmation settings'
+  description: 'Allows users to edit any webform''s confirmation settings.'
+
+edit any webform asset settings:
+  title: 'Edit any webform asset settings'
+  description: 'Allows users to edit any webform''s asset settings.'
+
+edit any webform handler settings:
+  title: 'Edit any webform handler settings'
+  description: 'Allows users to edit any webform''s handler settings.'
+
+edit any webform access settings:
+  title: 'Edit any webform access settings'
+  description: 'Allows users to edit any webform''s access settings.'
+
+edit any webform element settings:
+  title: 'Edit any webform element settings'
+  description: 'Allows users to edit any webform element''s settings.'
+  restrict access: true

@@ -1,0 +1,14 @@
+name: Webform Simplify
+type: module
+description: Simplifies the Webform user interface by hiding certain parts.
+package: User interface
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+configure: webform_simplify.settings
+dependencies:
+  - webform:webform (>=6.1)
+
+# Information added by Drupal.org packaging script on 2022-12-07
+version: '1.0.0'
+project: 'webform_simplify'
+datestamp: 1670431382

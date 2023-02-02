@@ -1,0 +1,7 @@
+webform_simplify.settings:
+  path: '/admin/structure/webform/simplify'
+  defaults:
+    _form: 'Drupal\webform_simplify\Form\WebformSimplifySettingsForm'
+    _title: Simplify
+  requirements:
+    _permission: 'configure webform simplify'

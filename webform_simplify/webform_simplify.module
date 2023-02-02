@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Hide the help sections throughout the Webform UI if necessary.
+ * Implements @see hook_module_implements_alter().
+ */
+function webform_simplify_module_implements_alter(array &$implementations, string $hook): void {
+  if ($hook !== 'help') {
+    return;
+  }
+
+  if (!\Drupal::config('webform_simplify.settings')->get('disable_help')) {
+    return;
+  }
+
+  unset($implementations['webform']);
+}
+
+/**
+ * Hide certain parts of element forms.
+ * Implements @see hook_form_FORM_ID_alter().
+ */
+function webform_simplify_form_webform_ui_element_form_alter(array &$form): void {
+  \Drupal::service('webform_simplify.element_alter')->alter($form);
+}

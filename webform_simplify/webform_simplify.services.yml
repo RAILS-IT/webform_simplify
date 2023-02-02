@@ -1,0 +1,17 @@
+services:
+  webform_simplify.element_alter:
+    class: Drupal\webform_simplify\WebformElementAlter
+    arguments:
+      - '@current_user'
+      - '@config.factory'
+      - '@plugin.manager.webform_simplify.element'
+
+  webform_simplify.route.subscriber:
+    class: Drupal\webform_simplify\EventSubscriber\WebformRouteSubscriber
+    tags: [{ name: event_subscriber }]
+    arguments:
+      - '@current_user'
+
+  plugin.manager.webform_simplify.element:
+    class: Drupal\webform_simplify\WebformSimplifyElementManager
+    parent: default_plugin_manager

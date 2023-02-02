@@ -1,0 +1,5 @@
+webform_simplify.settings:
+  title: Simplify
+  description: 'Configure the Webform Simplify module.'
+  route_name: webform_simplify.settings
+  parent: entity.webform.collection
