@@ -34,7 +34,6 @@ class Checkbox extends BooleanBase {
       'properties.display.exclude_empty',
     ];
     unset($map['unique']);
-    unset($map['display']);
 
     return $map;
   }
