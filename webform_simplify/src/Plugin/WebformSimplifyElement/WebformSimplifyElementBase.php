@@ -41,6 +41,7 @@ abstract class WebformSimplifyElementBase extends PluginBase implements WebformS
       'label_attributes' => $this->t('Label attributes'),
       'display' => $this->t('Submission display'),
       'admin' => $this->t('Administration'),
+      'validation' => $this->t('Form Validation'),
     ];
   }
 
@@ -141,6 +142,9 @@ abstract class WebformSimplifyElementBase extends PluginBase implements WebformS
       ],
       'admin' => [
         'properties.admin',
+      ],
+      'validation' => [
+        'properties.validation',
       ],
     ];
   }
