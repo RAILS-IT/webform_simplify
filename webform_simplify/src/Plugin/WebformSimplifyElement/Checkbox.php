@@ -30,7 +30,11 @@ class Checkbox extends BooleanBase {
    */
   public function getFeaturePropertyMap(): array {
     $map = parent::getFeaturePropertyMap();
+    $map['exclude_empty'] = [
+      'properties.display.exclude_empty',
+    ];
     unset($map['unique']);
+    unset($map['display']);
 
     return $map;
   }
