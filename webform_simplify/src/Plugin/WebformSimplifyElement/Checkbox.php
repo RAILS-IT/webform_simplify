@@ -20,7 +20,6 @@ class Checkbox extends BooleanBase {
     $features = parent::getFeatures();
     $features['exclude_empty'] = $this->t('Exclude unselected checkbox');
     unset($features['unique']);
-    unset($features['display']);
 
     return $features;
   }
@@ -34,7 +33,6 @@ class Checkbox extends BooleanBase {
       'properties.display.exclude_empty',
     ];
     unset($map['unique']);
-    unset($map['display']);
 
     return $map;
   }
